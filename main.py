@@ -3,7 +3,12 @@ from fastapi.responses import StreamingResponse
 from model import process_image_bytes
 
 app = FastAPI()
-
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.post("/predict/")
 async def predict(file: UploadFile = File(...)):
