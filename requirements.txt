@@ -1,4 +1,4 @@
-Set-Content requirements.txt "fastapi
+fastapi
 uvicorn
 opencv-python-headless
 pillow
@@ -7,4 +7,4 @@ python-multipart
 --extra-index-url https://download.pytorch.org/whl/cpu
 torch==2.0.1+cpu
 torchvision==0.15.2+cpu
-ultralytics"
+ultralytics
