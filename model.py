@@ -4,13 +4,13 @@ from ultralytics import YOLO
 from PIL import Image
 import numpy as np
 
-CONFIDENCE_THRESHOLD = 0.40
+CONFIDENCE_THRESHOLD = 0.45
 HEALTHY_CLASS_ID = 0
 YOLO_OPTIMAL_SIZE = 640
 
 COLOR_MAP = {
-    1: (255, 0, 0),
-    2: (0, 255, 255),
+    1: (0, 255, 255),
+    2: (255, 0, 0),
     3: (0, 0, 255)
 }
 
